@@ -23,4 +23,17 @@
     border-bottom: 1px solid #ccc;
     padding: 20px;
     margin: 0 0 0 20px;
+    position: relative;
+}
+
+.UserItem::before {
+    background-color: #2ed573;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    
 }

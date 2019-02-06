@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    padding-left: 100px;
 }
 
 .UserInput {
@@ -11,5 +12,5 @@
     font-size: 2em;
     border: 0;
     border-bottom: 1px solid #ccc;
-    width: 510px;
+    width: 100%;
 }

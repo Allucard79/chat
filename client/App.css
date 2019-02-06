@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
+    background-color: #dcdde1;
 }
 
 .App {
@@ -23,6 +27,8 @@ body {
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
+    background-color: #353b48;
+    color: #ffffff;
 }
 
 .AppRoom {
@@ -31,6 +37,8 @@ body {
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
+    background-color: #2f3640;
+    color: #ffffff;
 }
 
 .AppBody {

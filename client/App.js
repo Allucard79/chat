@@ -18,8 +18,7 @@ class App extends Component {
 			users: [],
 			messages: [],
 			text: '',
-			name: '',
-			color: ''
+			name: ''
 		};
     }
 
@@ -59,10 +58,10 @@ class App extends Component {
             <div className={styles.App}>
                 <div className={styles.AppHeader}>
                     <div className={styles.AppTitle}>
-                        ChatApp
+                        Chat
                     </div>
                     <div className={styles.AppRoom}>
-                        App room
+                        Room
                     </div>
                 </div>
                 <div className={styles.AppBody}>
@@ -88,4 +87,3 @@ class App extends Component {
 };
 
 export default hot(module)(App);
-
