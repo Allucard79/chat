@@ -19,7 +19,9 @@ class App extends Component {
 			messages: [],
 			text: '',
 			name: ''
-		};
+        };
+        this.handleMessageSubmit = this.handleMessageSubmit.bind(this);
+        this.handleUserSubmit = this.handleUserSubmit.bind(this);
     }
 
     componentDidMount() {
@@ -73,7 +75,7 @@ class App extends Component {
                             messages={this.state.messages}
                         />
                         <MessageForm
-                            onMessageSubmit={message => this.handleMessageSubmit(message)}
+                            onMessageSubmit={this.handleMessageSubmit}
                             name={this.state.name}
                         />
                     </div>
@@ -82,7 +84,7 @@ class App extends Component {
         );
     }
     renderUserForm() {
-        return (<UserForm onUserSubmit={name => this.handleUserSubmit(name)} />)
+        return (<UserForm onUserSubmit={this.handleUserSubmit} />)
     }
 };
 

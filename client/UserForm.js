@@ -6,6 +6,8 @@ class UserForm extends Component {
     constructor(props) {
         super(props);
         this.state = {name: ''};
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
 }
 
     handleSubmit(e) {
@@ -19,12 +21,12 @@ class UserForm extends Component {
 
     render() {
         return(  
-        <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
+        <form className={styles.UserForm} onSubmit={this.handleSubmit}>
             <h1>Welcom to ChatApp!</h1>  
             <input
                 className={styles.UserInput}
                 placeholder='Write your nickname and press enter'
-                onChange={e => this.handleChange(e)}
+                onChange={this.handleChange}
                 value={this.state.name}
             />
         </form>

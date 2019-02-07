@@ -5,7 +5,10 @@ class MessageForm extends Component {
     constructor(props) {
         super(props);
         this.state = {text: ''};
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.changeHandler = this.changeHandler.bind(this);
     }
+
 
     handleSubmit(e) {
         e.preventDefault();
@@ -23,10 +26,10 @@ class MessageForm extends Component {
 
     render() {
         return(
-            <form className={styles.MessageForm} onSubmit={e => this.handleSubmit(e)}>
+            <form className={styles.MessageForm} onSubmit={this.handleSubmit}>
                 <input
                     className={styles.MessageInput}
-                    onChange={e => this.changeHandler(e)}
+                    onChange={this.changeHandler}
                     value={this.state.text}
                     placeholder='Message'
                 />
